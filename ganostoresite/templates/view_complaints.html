@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="view-complaints-container">
+        <h2>Перегляд скарг</h2>
+        <div class="complaints-list">
+            {% for complaint in complaints %}
+                <div class="complaint">
+                    <h3>Скарга на програму: {{ complaint.program.title }}</h3>
+                    <p>Від: {{ complaint.author.username }}</p>
+                    <p>{{ complaint.content }}</p>
+                    <p>Статус: {% if complaint.resolved %}Вирішено{% else %}Не вирішено{% endif %}</p>
+                    {% if not complaint.resolved %}
+                        <a href="{% url 'resolve_complaint' complaint.id %}" class="btn-resolve">Відмітити як
+                            вирішено</a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

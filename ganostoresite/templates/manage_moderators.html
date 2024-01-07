@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="manage-moderators-container">
+    <h2>Управління модераторами</h2>
+    <div class="users-list">
+        {% for user in users %}
+        <div class="user">
+            <h3>{{ user.username }}</h3>
+            <p>Email: {{ user.email }}</p>
+            {% if user.is_staff %}
+                <p>Статус: Модератор</p>
+                <a href="{% url 'remove_moderator' user.id %}" class="btn-remove-moderator">Забрати статус модератора</a>
+            {% else %}
+                <p>Статус: Користувач</p>
+                <a href="{% url 'add_moderator' user.id %}" class="btn-add-moderator">Надати статус модератора</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

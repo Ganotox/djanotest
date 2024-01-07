@@ -1,0 +1,973 @@
+/* Додайте стилі для заголовка, навігаційної панелі та футера */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.registration-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.registration-container h2 {
+    color: #d10000;
+}
+
+.btn-register {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .registration-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #d10000;
+}
+
+.btn-login {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.password-reset-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.password-reset-container h2 {
+    color: #d10000;
+}
+
+.btn-reset {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-reset:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .password-reset-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.about-us-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-us-container h2 {
+    color: #d10000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about-us-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #d10000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.home-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.home-container h2 {
+    color: #d10000;
+}
+
+.program {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .home-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.user-profile-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.user-profile-container h2, .user-profile-container h3 {
+    color: #d10000;
+}
+
+.user-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.program {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .user-profile-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.upload-program-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.upload-program-container h2 {
+    color: #d10000;
+}
+
+.btn-upload {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .upload-program-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.program-detail-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.program-detail-container h2, .program-detail-container h3 {
+    color: #d10000;
+}
+
+.program-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.program-actions {
+    margin-top: 20px;
+}
+
+.btn-download {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color: #b00000;
+}
+
+.comment {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Попередні стилі */
+
+.btn-rate, .btn-comment, .btn-submit-comment {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn-rate:hover, .btn-comment:hover, .btn-submit-comment:hover {
+    background-color: #b00000;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .program-detail-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.edit-profile-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.edit-profile-container h2 {
+    color: #d10000;
+}
+
+.btn-save {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .edit-profile-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.manage-programs-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.manage-programs-container h2 {
+    color: #d10000;
+}
+
+.program {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn-edit, .btn-delete {
+    background-color: #d10000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .manage-programs-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.manage-users-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.manage-users-container h2 {
+    color: #d10000;
+}
+
+.user {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn-block, .btn-moderator {
+    background-color: #d10000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-block:hover, .btn-moderator:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .manage-users-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.manage-moderators-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.manage-moderators-container h2 {
+    color: #d10000;
+}
+
+.user {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn-add-moderator, .btn-remove-moderator {
+    background-color: #d10000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-add-moderator:hover, .btn-remove-moderator:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .manage-moderators-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.view-complaints-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.view-complaints-container h2 {
+    color: #d10000;
+}
+
+.complaint {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.btn-resolve {
+    background-color: #d10000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-resolve:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .view-complaints-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.edit-program-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.edit-program-container h2 {
+    color: #d10000;
+}
+
+.btn-save {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .edit-program-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.delete-program-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.delete-program-container h2 {
+    color: #d10000;
+}
+
+.btn-delete, .btn-cancel {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #b00000;
+}
+
+.btn-cancel {
+    background-color: #666;
+}
+
+.btn-cancel:hover {
+    background-color: #444;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .delete-program-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.add-comment-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-comment-container h2 {
+    color: #d10000;
+}
+
+.comment-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+.btn-submit-comment {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit-comment:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .add-comment-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.submit-complaint-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.submit-complaint-container h2 {
+    color: #d10000;
+}
+
+.complaint-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+.btn-submit-complaint {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit-complaint:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .submit-complaint-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.search-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.search-container h2, .search-container h3 {
+    color: #d10000;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+.search-item {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .search-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.block-user-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.block-user-container h2 {
+    color: #d10000;
+}
+
+.btn-block, .btn-cancel {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-block:hover {
+    background-color: #b00000;
+}
+
+.btn-cancel {
+    background-color: #666;
+}
+
+.btn-cancel:hover {
+    background-color: #444;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .block-user-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.rules-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.rules-container h2 {
+    color: #d10000;
+    text-align: center;
+}
+
+.rules-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .rules-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.change-theme-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-toggle-theme {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-toggle-theme:hover {
+    background-color: #b00000;
+}
+
+/* Стилі для темної теми */
+.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+.dark-theme .change-theme-container h2 {
+    color: #fff;
+}
+
+.home-container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.home-container h2 {
+    color: #d10000;
+}
+
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.program {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(50% - 20px);
+}
+
+.program-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.btn-detail {
+    background-color: #d10000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-detail:hover {
+    background-color: #b00000;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .program {
+        width: calc(100% - 20px);
+    }
+}
+

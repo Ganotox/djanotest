@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GanoStore</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Головна</a></li>
+            <li><a href="{% url 'about_us' %}">Про нас</a></li>
+            <li><a href="{% url 'contact' %}">Контакти</a></li>
+            <li><a href="{% url 'rules' %}">Правила</a></li>
+            <!-- Додайте інші посилання тут -->
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'user_profile' user.username %}">Мій профіль</a></li>
+                <li><a href="{% url 'logout' %}">Вийти</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Вхід</a></li>
+                <li><a href="{% url 'register' %}">Реєстрація</a></li>
+            {% endif %}
+        </ul>
+        <form action="{% url 'search' %}" method="get">
+            <input type="text" name="q" placeholder="Пошук...">
+            <button type="submit">Пошук</button>
+        </form>
+    </nav>
+</header>
+
+{% block content %}
+    <!-- Основний вміст сторінки -->
+{% endblock %}
+
+<footer>
+    <p>© 2024 GanoStore. Всі права захищені.</p>
+</footer>
+</body>
+</html>

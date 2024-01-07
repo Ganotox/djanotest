@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="user-profile">
+    <h2>Профіль користувача: {{ user.username }}</h2>
+
+    <!-- Відображення аватарки -->
+    {% if user.avatar %}
+        <img src="{{ user.avatar.url }}" alt="Аватар {{ user.username }}" style="width: 100px; height: 100px;">
+    {% else %}
+        <img src="{% static '1.jpg' %}" alt="Стандартна аватарка" style="width: 100px; height: 100px;">
+    {% endif %}
+
+    <p>Email: {{ user.email }}</p>
+    <p>Статус:
+        {% if user.is_superuser %}
+            Адміністратор
+        {% elif user.is_staff %}
+            Модератор
+        {% else %}
+            Звичайний користувач
+        {% endif %}
+    </p>
+
+    <!-- Кнопки дій -->
+    <a href="{% url 'upload_program' %}">Завантажити програму</a>
+    <a href="{% url 'user_programs' user.username %}">Мої програми</a>
+    <a href="{% url 'edit_profile' %}">Редагувати профіль</a>
+
+    {% if user.is_staff or user.is_superuser %}
+        <a href="{% url 'view_complaints' %}">Перегляд скарг</a>
+    {% endif %}
+
+    {% if user.is_superuser %}
+        <a href="{% url 'manage_moderators' %}">Керування модераторами</a>
+    {% endif %}
+</div>
+{% endblock %}
